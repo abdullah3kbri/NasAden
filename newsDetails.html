@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تفاصيل الخبر</title>
+    <link rel="icon" type="image/x-icon" href="avatar.jpg">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/hover.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/newsDetails.css">
+</head>
+
+<body>
+    <!-- healog -->
+    <div id="myModal" class="modal" onclick="closeOutside(event)">
+        <div class="modal-content">
+            <button class="close-button" onclick="closeDialog()">
+                <i class="fa-regular fa-circle-xmark"></i>
+            </button>
+            <div class="icon">
+                <img class="w-100 h-100" src="avatar.jpg" alt="">
+            </div>
+            <h6 class="pt-2">أيش بريدك؟</h6>
+            <span class="py-2">أدخل ايميلك لتتلقى الأشعارات من ناس عدن</span>
+            <input type="text" id="userInput" placeholder="nasAden@gmail.com" />
+            <button class="full-width-button bg-dark" onclick="confirmAction()">متابعة</button>
+        </div>
+    </div>
+
+    <!-- start header  -->
+    <header>
+        <nav class="navbar navbar-expand-md navbar-light fixed-top">
+            <div class="container">
+                <a class="px-3" href="index.html">
+                    <img src="avatar.jpg" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav mb-2 mb-md-0">
+                        <li class="p-2 mx-2"><a href="articles.html" class="border-radius"><i
+                                    class="fas fa-regular fa-file-lines"></i><span
+                                    class="d-inline d-md-none me-3 me-md-0">المقالات</span></a></li>
+                        <li class="p-2 mx-2"><a href="radioPage.html" class="border-radius"><i
+                                    class="fa-solid fa-headphones-simple"></i><span
+                                    class="d-inline d-md-none me-3 me-md-0">الاذاعة</span></a></li>
+                        <li class="p-2 mx-2"><a href="documentaries.html" class="border-radius"><i
+                                    class="fas fa-solid fa-video"></i><span
+                                    class="d-inline d-md-none me-3 me-md-0">الوثائقيات</span></a></li>
+                        <li class="p-2 mx-2"><a href="" class="border-radius"><i
+                                    class="fa-solid fa-magnifying-glass"></i><span
+                                    class="d-inline d-md-none me-3 me-md-0">البحث</span></a></li>
+                    </ul>
+                    <!-- <form class="d-flex me-auto" role="search">
+                                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                <button class="btn btn-outline-success" type="submit">Search</button>
+                            </form> -->
+                    <div class="header-btns border-top pt-3 pt-md-0 me-auto mb-3 mb-md-0">
+                        <button class="bg-dark text-light border-radius"><span>اشتراك ناس عدن <i
+                                    class="fas fa-medal me-2"></i></span></button>
+                        <button class="bg-white border border-radius me-3" onclick="showDialog()"><span>الدخول</span></button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- end header  -->
+
+    <main class="text-end">
+        <div class="container">
+            <div class="landing-section border-bottom pb-4">
+                <div class="main-heading">
+                    <h3 class="heading">عقار يطمح للسيطرة على سوق التقنية العقارية</h3>
+                    <p class="subtitle py-3">يبدو ان عقار لاتخطط للسيطرة على سوق الوساطة العقارية فقط, بل تنوي التوسع في
+                        نماذج تقنية عقارية مختلفة.</p>
+                </div>
+                <div class="author pt-4">
+                    <span>
+                        <a href="">
+                            <img class="rounded-full first-img" src="imgs/avatar/avatar-06.png" alt="">
+                        </a>
+                        <a href="">
+                            <img class="rounded-full last-img" src="imgs/avatar/avatar2.jpg" alt="">
+                        </a>
+                        <span>
+                            <a href="" class="name">عبدالله العكبري <span class="subtitle">و</span> مرعي بن هلابي</a>
+
+                        </span>
+                    </span>
+                    <div class="details">
+                        <p class="subtitle">في <span>نشرة قروش </span> من
+                            <span>ناس عدن</span> 23
+                            أكتوبر
+                            2024
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="image mt-5">
+                <div class="img-section mx-auto">
+                    <img class="border-radius" src="imgs/post.jpg" alt="">
+                </div>
+                <div class="img-title">
+                    <p class="subtitle text-center pt-2">عقار وسوق التقنية العقارية / تصميم: عبدالله العكبري</p>
+                </div>
+            </div>
+            <div class="description border-bottom pb-4 py-5">
+                <h3 class="heading-2">عقار يطمح للسيطرة على سوق التقنية العقارية</h3>
+                <p class="my-3">القصة باختصار :</p>
+                <p class="subtitle">
+                    تقام هذا الأسبوع «القمّة العالمية للبروبتك» التي تستقطب أبرز الخبراء والشركات العالمية الرائدة في
+                    مجال التقنية العقاريّة. وتأتي استضافة هذه القمة في مدينة الرياض دلالةً على الاهتمام الكبير بهذا
+                    القطاع الواعد الذي يجمع أحد أكبر الأسواق في السعودية وحول العالم، وهي التقنية والعقار.
+                </p>
+                <p class="my-3">المهم هنا :</p>
+                <p class="subtitle">
+                    يشهد سوق التقنية العقاريّة في السعوديّة نموًّا هائلًا في السنوات الأخيرة على كافة الأصعدة. فمن
+                    الناحية التشريعية، بدأت الهيئة العامة للعقار بفرض ضوابط لعمل المنصات العقارية التقنيّة والترخيص لها.
+                    وتجاوز عدد المنصات المرخصة خمسين منصّة، يركز معظمها على مراحل التأجير أو التملّك، بداية من البحث عن
+                    الوحدة المناسبة، وربط الوسطاء والملّاك بالعميل النهائي، وما يتضمنها من مراحل كإدارة الأملاك، ووصولًا
+                    إلى المدفوعات.
+
+                    صحيح أن المنصات التقنيّة اليوم ليست الأكثر ابتكارًا، وحلولها تتركز على رحلة العميل دون الدخول في
+                    نماذج مبتكرة «ثوريّة» تغيّر شكل السوق، ولكنّ هذا التركيز يبدو منطقيًّا في سوق مثل السوق السعودي؛
+                    يعاني من مشاكل هيكليّة متعددة، ليصبح حل هذه المشاكل أولويّة قبل الانتقال للمراحل الأكثر ابتكارًا.
+
+                    رغم أن حل هذه المشاكل يبدو بديهيًّا، فإنه ليس بالسهولة التي يظهر عليها. فتطبيق عقار الذي بدأه مؤسس
+                    حراج في 2013، والذي يعد أوّل اللاعبين في هذا السوق، ويستحوذ اليوم على 80% من الإعلانات العقاريّة
+                    الرقميّة لهذا السوق، ما زال رغم نموه المتسارع يحاول حلّ المشكلة الرئيسة التي يركز عليها، وهي
+                    الموازنة بين العرض والطلب. فالرحلة لرقمنة قطاع تقليدي للغاية تمر بصعوبات كثيرة، فحتى تستطيع الوصول
+                    إلى عملاء أكثر في جانب الطلب، تحتاج لإقناع الوسطاء العقاريين بنشر إعلاناتهم عبر المنصّة - الأمر الذي
+                    لم يكن مقبولًا في ذلك الوقت لدى الكثيرين- ومن جهة أخرى، تحتاج الوصول إلى عدد كبير من العملاء النشطين
+                    لإقناع الوسطاء بجدوى المنصّة. وهو ما يشبه المعضلة الشهيرة: البيضة والدجاجة.
+                </p>
+                <p class="my-3">بشكل عام :</p>
+                <p class="subtitle">
+                    المنافسة الضخمة في سوق التقنية العقاريّة هي مؤشر لحجم الفرص في هذا السوق. فحجم سوق العقار في
+                    السعوديّة تجاوز 240 مليار ريال، ومن المتوقع أن يتجاوز 350 مليار ريال بحلول عام 2028. وهي مساحة ضخمة
+                    لصناعة شركات ملياريّة بنماذج عمل مختلفة في هذا السوق العملاق. ومع وجود العديد من المشاكل والتحديات
+                    في سوق بهذا الحجم، فالفرصة لدخول لاعبين جدد ما زالت متاحة، وموجة التقنية العقارية ما زالت في
+                    بدايتها.
+                </p>
+            </div>
+            <div class="subscribe-card">
+                <div class="card p-3 border-radius">
+                    <div class="row d-flex justify-content-between align-items-center border-bottom pb-3">
+                        <div class="col-6 col-sm-3">
+                            <div class="img-side">
+                                <a href="">
+                                    <img class="img-fluid border-radius aspect-square" src="imgs/mail-post5.webp"
+                                        alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-9">
+                            <div class="title-side mt-4 mt-md-0">
+                                <a href="">
+                                    <h3 class="heading-2">نشرة قروش 🫧</h3>
+                                    <div class="my-2 subheading-2 subtitle">انظم الان في نشرة قروش واحصل على اخر الاخبار
+                                        الخاصة بنشرة قروش سجل ايميلك واسمك واستمتع بنشرة قروش</div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <form action="">
+                        <div class="p-2 mt-2 row d-flex justify-content-between align-items-center">
+                            <div class="col-12 col-md-6">
+                                <div class="ms-md-2 mb-2">
+                                    <label class="subtitle pb-2" for="email">بريدك الالكتروني</label>
+                                    <input class="border-radius p-1 border-1 w-100" type="email" id="email"
+                                        placeholder="nasAden@gmail.com">
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <div>
+                                    <label class="subtitle pb-2" for="email">اسمك الأول</label>
+                                    <input class="border-radius p-1 border-1 w-100" type="text" id="email"
+                                        placeholder="عبدالله">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-2">
+                            <button class="bg-dark text-light border border-radius px-2 py-1 w-25">متابعة</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="more border-bottom py-5">
+                <h3 class="heading-2 pb-4">المزيد من نشرة قروش</h3>
+                <div class="row d-flex justify-content-between align-items-center">
+                    <div class="col-12 mb-4">
+                        <div class="row d-flex align-items-center align-items-md-start section-one border-radius py-2">
+                            <div class="col-6 col-sm-3">
+                                <div class="img-side">
+                                    <a href="">
+                                        <img class="img-fluid border-radius aspect-square" src="imgs/purple4.jpg"
+                                            alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-9">
+                                <div class="title-side mt-4 mt-md-0">
+                                    <a href="">
+                                        <h3 class="heading-2">سويفل : العودة للقمة أصعب من وصولها ؟ 🫧</h3>
+                                        <div class="my-2 subheading-2" style="font-family: 'SansArabicLight';">كل
+                                            الشركات التقنية تستثمر أموالًا طائلة لتنمية قطاع الذكاء الاصطناعي لديها، إلى
+                                            حد تكوَّنت فيه فقاعة اقتصادية جديدة.</div>
+                                        <div class="author">
+                                            <span>
+                                                <a href="">
+                                                    <img class="rounded-full first-img" src="imgs/avatar/avatar-06.png"
+                                                        alt="">
+                                                </a>
+                                                <a href="">
+                                                    <img class="rounded-full last-img" src="imgs/avatar/avatar2.jpg"
+                                                        alt="">
+                                                </a>
+                                                <span>
+                                                    <a href="" class="name">عبدالله العكبري</a>
+                                                    <span class="subtitle"
+                                                        style="font-family: 'SansArabicLight';">وآخر</span>
+                                                </span>
+                                            </span>
+                                        </div>
+                                        <div class="details">
+                                            <p class="my-2" style="font-family: 'SansArabicLight';">في <span
+                                                    style="font-family: 'SansArabicSemiBold';">نشرة قروش </span> من
+                                                <span style="font-family: 'SansArabicSemiBold';">ناس عدن</span> 23
+                                                أكتوبر
+                                                2024
+                                            </p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 mb-4">
+                        <div class="row d-flex align-items-center align-items-md-start section-one border-radius py-2">
+                            <div class="col-6 col-sm-3">
+                                <div class="img-side">
+                                    <a href="">
+                                        <img class="img-fluid border-radius aspect-square" src="imgs/purple3.jpg"
+                                            alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-9">
+                                <div class="title-side mt-4 mt-md-0">
+                                    <a href="">
+                                        <h3 class="heading-2">هل ينجح رهان ناس عدن على محتواه ؟</h3>
+                                        <div class="my-2 subheading-2" style="font-family: 'SansArabicLight';">كل
+                                            الشركات التقنية تستثمر أموالًا طائلة لتنمية قطاع الذكاء الاصطناعي لديها، إلى
+                                            حد تكوَّنت فيه فقاعة اقتصادية جديدة.</div>
+                                        <div class="author">
+                                            <span>
+                                                <a href="">
+                                                    <img class="rounded-full first-img" src="imgs/avatar/avatar-06.png"
+                                                        alt="">
+                                                </a>
+                                                <a href="">
+                                                    <img class="rounded-full last-img" src="imgs/avatar/avatar2.jpg"
+                                                        alt="">
+                                                </a>
+                                                <span>
+                                                    <a href="" class="name">عبدالله العكبري</a>
+                                                    <span class="subtitle"
+                                                        style="font-family: 'SansArabicLight';">وآخر</span>
+                                                </span>
+                                            </span>
+                                        </div>
+                                        <div class="details">
+                                            <p class="my-2" style="font-family: 'SansArabicLight';">في <span
+                                                    style="font-family: 'SansArabicSemiBold';">نشرة قروش </span> من
+                                                <span style="font-family: 'SansArabicSemiBold';">ناس عدن</span> 23
+                                                أكتوبر
+                                                2024
+                                            </p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 mb-4">
+                        <div class="row d-flex align-items-center align-items-md-start section-one border-radius py-2">
+                            <div class="col-6 col-sm-3">
+                                <div class="img-side">
+                                    <a href="">
+                                        <img class="img-fluid border-radius aspect-square" src="imgs/purple8.jpg"
+                                            alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-9">
+                                <div class="title-side mt-4 mt-md-0">
+                                    <a href="">
+                                        <h3 class="heading-2">أكبر جولة استثمارية في التاريح</h3>
+                                        <div class="my-2 subheading-2" style="font-family: 'SansArabicLight';">كل
+                                            الشركات التقنية تستثمر أموالًا طائلة لتنمية قطاع الذكاء الاصطناعي لديها، إلى
+                                            حد تكوَّنت فيه فقاعة اقتصادية جديدة.</div>
+                                        <div class="author">
+                                            <span>
+                                                <a href="">
+                                                    <img class="rounded-full first-img" src="imgs/avatar/avatar-06.png"
+                                                        alt="">
+                                                </a>
+                                                <a href="">
+                                                    <img class="rounded-full last-img" src="imgs/avatar/avatar2.jpg"
+                                                        alt="">
+                                                </a>
+                                                <span>
+                                                    <a href="" class="name">عبدالله العكبري</a>
+                                                    <span class="subtitle"
+                                                        style="font-family: 'SansArabicLight';">وآخر</span>
+                                                </span>
+                                            </span>
+                                        </div>
+                                        <div class="details">
+                                            <p class="my-2" style="font-family: 'SansArabicLight';">في <span
+                                                    style="font-family: 'SansArabicSemiBold';">نشرة قروش </span> من
+                                                <span style="font-family: 'SansArabicSemiBold';">ناس عدن</span> 23
+                                                أكتوبر
+                                                2024
+                                            </p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 mb-4">
+                        <div class="row d-flex align-items-center align-items-md-start section-one border-radius py-2">
+                            <div class="col-6 col-sm-3">
+                                <div class="img-side">
+                                    <a href="">
+                                        <img class="img-fluid border-radius aspect-square" src="imgs/purple7.jpg"
+                                            alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-9">
+                                <div class="title-side mt-4 mt-md-0">
+                                    <a href="">
+                                        <h3 class="heading-2">أول ادراج لمتجر الكتروني في السوق السعودي</h3>
+                                        <div class="my-2 subheading-2" style="font-family: 'SansArabicLight';">كل
+                                            الشركات التقنية تستثمر أموالًا طائلة لتنمية قطاع الذكاء الاصطناعي لديها، إلى
+                                            حد تكوَّنت فيه فقاعة اقتصادية جديدة.</div>
+                                        <div class="author">
+                                            <span>
+                                                <a href="">
+                                                    <img class="rounded-full first-img" src="imgs/avatar/avatar-06.png"
+                                                        alt="">
+                                                </a>
+                                                <a href="">
+                                                    <img class="rounded-full last-img" src="imgs/avatar/avatar2.jpg"
+                                                        alt="">
+                                                </a>
+                                                <span>
+                                                    <a href="" class="name">عبدالله العكبري</a>
+                                                    <span class="subtitle"
+                                                        style="font-family: 'SansArabicLight';">وآخر</span>
+                                                </span>
+                                            </span>
+                                        </div>
+                                        <div class="details">
+                                            <p class="my-2" style="font-family: 'SansArabicLight';">في <span
+                                                    style="font-family: 'SansArabicSemiBold';">نشرة قروش </span> من
+                                                <span style="font-family: 'SansArabicSemiBold';">ناس عدن</span> 23
+                                                أكتوبر
+                                                2024
+                                            </p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 mb-4">
+                        <div class="row d-flex align-items-center align-items-md-start section-one border-radius py-2">
+                            <div class="col-6 col-sm-3">
+                                <div class="img-side">
+                                    <a href="">
+                                        <img class="img-fluid border-radius aspect-square" src="imgs/purple1.jpg"
+                                            alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-9">
+                                <div class="title-side mt-4 mt-md-0">
+                                    <a href="">
+                                        <h3 class="heading-2">هل تكون التقنية المالية طوق النجاة لساري ؟</h3>
+                                        <div class="my-2 subheading-2" style="font-family: 'SansArabicLight';">كل
+                                            الشركات التقنية تستثمر أموالًا طائلة لتنمية قطاع الذكاء الاصطناعي لديها، إلى
+                                            حد تكوَّنت فيه فقاعة اقتصادية جديدة.</div>
+                                        <div class="author">
+                                            <span>
+                                                <a href="">
+                                                    <img class="rounded-full first-img" src="imgs/avatar/avatar-06.png"
+                                                        alt="">
+                                                </a>
+                                                <a href="">
+                                                    <img class="rounded-full last-img" src="imgs/avatar/avatar2.jpg"
+                                                        alt="">
+                                                </a>
+                                                <span>
+                                                    <a href="" class="name">عبدالله العكبري</a>
+                                                    <span class="subtitle"
+                                                        style="font-family: 'SansArabicLight';">وآخر</span>
+                                                </span>
+                                            </span>
+                                        </div>
+                                        <div class="details">
+                                            <p class="my-2" style="font-family: 'SansArabicLight';">في <span
+                                                    style="font-family: 'SansArabicSemiBold';">نشرة قروش </span> من
+                                                <span style="font-family: 'SansArabicSemiBold';">ناس عدن</span> 23
+                                                أكتوبر
+                                                2024
+                                            </p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- start footer  -->
+    <div class="footer">
+        <div class="container">
+            <div class="py-3 text-center">
+                <span>جميع الحقوق محفوظة لشركة ناس عدن للنشر والتوزيع &copy; 2024
+                </span>
+            </div>
+        </div>
+    </div>
+    <!-- end footer  -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

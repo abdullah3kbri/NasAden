@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الأذاعة</title>
+    <link rel="icon" type="image/x-icon" href="avatar.jpg">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/hover.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- healog -->
+    <div id="myModal" class="modal" onclick="closeOutside(event)">
+        <div class="modal-content">
+            <button class="close-button" onclick="closeDialog()">
+                <i class="fa-regular fa-circle-xmark"></i>
+            </button>
+            <div class="icon">
+                <img class="w-100 h-100" src="avatar.jpg" alt="">
+            </div>
+            <h6 class="pt-2">أيش بريدك؟</h6>
+            <span class="py-2">أدخل ايميلك لتتلقى الأشعارات من ناس عدن</span>
+            <input type="text" id="userInput" placeholder="nasAden@gmail.com" />
+            <button class="full-width-button bg-dark" onclick="confirmAction()">متابعة</button>
+        </div>
+    </div>
+    <!-- start header  -->
+    <header>
+        <nav class="navbar navbar-expand-md navbar-light fixed-top">
+            <div class="container">
+                <a class="px-3" href="index.html">
+                    <img src="avatar.jpg" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav mb-2 mb-md-0">
+                        <li class="p-2 mx-2"><a href="articles.html" class="border-radius"><i
+                                    class="fas fa-regular fa-file-lines"></i><span
+                                    class="d-inline d-md-none me-3 me-md-0">المقالات</span></a></li>
+                        <li class="p-2 mx-2"><a href="radioPage.html" class="border-radius  bg-dark text-light"><i
+                                    class="fa-solid fa-headphones-simple"></i><span
+                                    class="d-inline d-md-none me-3 me-md-0">الاذاعة</span></a></li>
+                        <li class="p-2 mx-2"><a href="documentaries.html" class="border-radius"><i
+                                    class="fas fa-solid fa-video"></i><span
+                                    class="d-inline d-md-none me-3 me-md-0">الوثائقيات</span></a></li>
+                        <li class="p-2 mx-2 search"><a class="border-radius"><i
+                            class="fa-solid fa-magnifying-glass"></i><span
+                            class="d-inline d-md-none me-3 me-md-0">البحث</span></a></li>
+                    </ul>
+                    <form class="justify-content-end mb-2 mb-md-0" role="search">
+                        <input class="form-control me-2 search-input" type="search" placeholder="ابحث هنا.." aria-label="Search">
+                    </form>
+                    <div class="d-flex header-btns border-top pt-3 pt-md-0 me-auto mb-3 mb-md-0">
+                        <button class="me-md-2 me-lg-0 py-md-0 py-lg-auto bg-dark text-light border-radius" onclick="showDialog()"><span>اشتراك ناس عدن <i
+                                    class="fas fa-medal me-2"></i></span></button>
+                        <button class="bg-white border border-radius me-3 me-md-2 me-lg-3"
+                            onclick="showDialog()"><span>الدخول</span></button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- end header  -->
+
+    <!-- start landing  -->
+    <div class="landing">
+        <div class="container">
+            <div class="main-heading pb-4 d-flex justify-content-start align-items-center">
+                <i class="fas fa-headphones-simple fs-3 ms-3"></i>
+                <h3>الإذاعـــة</h3>
+            </div>
+            <div class="row content border-radius py-2 d-flex justify-content-center align-items-center">
+                <div class="col-md-5">
+                    <div class="img-side">
+                        <a href="">
+                            <img class="img-fluid border-radius" src="imgs/video2.webp" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-7">
+                    <div class="title-side mt-4 mt-md-0">
+                        <a href="">
+                            <h3 class="heading">كيف يخدع لاعب الخفة الناس ؟</h3>
+                            <div class="my-3" style="font-family: 'SansArabicLight';">ضيفنا في هذه الحلقة محمد ال ناصر
+                                للحديث عن اسرار العاب الخفة والكشف عنها</div>
+                            <div class="details">
+                                <p class="my-2" style="font-family: 'SansArabicLight';">في <span
+                                        style="font-family: 'SansArabicSemiBold';">النشرة السينمائية </span> من <span
+                                        style="font-family: 'SansArabicSemiBold';">ناس عدن</span> 23 أكتوبر 2024 <i
+                                        class="fas fa-solid fa-medal"></i></p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end landing  -->
+
+    <!-- start landing section  -->
+    <section>
+        <div class="container border-bottom pb-4">
+            <div class="row d-flex justify-content-between align-items-center">
+                <div class="col-md-6">
+                    <div class="row d-flex align-items-center align-items-md-start section-one border-radius py-2">
+                        <div class="col-6 col-sm-3">
+                            <div class="img-side">
+                                <a href="">
+                                    <img class="img-fluid border-radius aspect-square" src="imgs/article-3.webp" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-9">
+                            <div class="title-side mt-4 mt-md-0">
+                                <a href="">
+                                    <h3 class="heading-2">كيف تساعدك العدائية السلبية في العمل؟</h3>
+                                    <div class="my-2 subheading-2" style="font-family: 'SansArabicLight';">من سابع
+                                        المستحيلات ألا يمر أسبوع دون محفز قوي يثير غضبك من مديرك أو زميلك.
+                                    </div>
+                                    <div class="details">
+                                        <p class="my-2" style="font-family: 'SansArabicLight';">في <span
+                                                style="font-family: 'SansArabicSemiBold';">بودكاست حوار </span> من
+                                            <span style="font-family: 'SansArabicSemiBold';">ناس عدن</span> 23
+                                            أكتوبر
+                                            2024
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="row d-flex align-items-center align-items-md-start section-one border-radius py-2">
+                        <div class="col-6 col-sm-3">
+                            <div class="img-side">
+                                <a href="">
+                                    <img class="img-fluid border-radius aspect-square" src="imgs/post-2.jpg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-9">
+                            <div class="title-side mt-4 mt-md-0">
+                                <a href="">
+                                    <h3 class="heading-2">أسئلتكم عن التقاعد واسعار الوكالات والشهادة</h3>
+                                    <div class="my-2 subheading-2" style="font-family: 'SansArabicLight';">نجيب في هذه
+                                        الحلقة من بودكاست جادي عن مجموعة من أسئلتكم.</div>
+                                    <div class="details">
+                                        <p class="my-2" style="font-family: 'SansArabicLight';">في <span
+                                                style="font-family: 'SansArabicSemiBold';">بودكاست جادي </span> من <span
+                                                style="font-family: 'SansArabicSemiBold';">ناس عدن</span> 23 أكتوبر 2024
+                                            <i class="fas fa-solid fa-medal"></i>
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="row section-one border-radius py-2">
+                        <div class="col-6 col-sm-3">
+                            <div class="img-side">
+                                <a href="">
+                                    <img class="img-fluid border-radius aspect-square" src="imgs/episode-6.webp" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-9">
+                            <div class="title-side mt-4 mt-md-0">
+                                <a href="">
+                                    <h3 class="heading-2">النجاة من الموت : غرق عبّارة السلام.</h3>
+                                    <div class="my-2 subheading-2" style="font-family: 'SansArabicLight';">ضيف هذه
+                                        الحلقة من بودكاست سقراط عبدالله العكبري</div>
+                                    <div class="details">
+                                        <p class="my-2" style="font-family: 'SansArabicLight';">في <span
+                                                style="font-family: 'SansArabicSemiBold';">بودكاست سقراط </span> من
+                                            <span style="font-family: 'SansArabicSemiBold';">ناس عدن</span> 23 أكتوبر
+                                            2024
+                                            <i class="fas fa-solid fa-medal"></i>
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="row section-one border-radius py-2">
+                        <div class="col-6 col-sm-3">
+                            <div class="img-side">
+                                <a href="">
+                                    <img class="img-fluid border-radius aspect-square" src="imgs/section-tail-img.webp"
+                                        alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-9">
+                            <div class="title-side mt-4 mt-md-0">
+                                <a href="">
+                                    <h3 class="heading-2">لست خائفًا: الرواية التي ستوقظ ذكريات طفولتك</h3>
+                                    <div class="my-2 subheading-2" style="font-family: 'SansArabicLight';">تتناول رواية
+                                        «لست خائفًا» براءة الطفولة قبال المخاطر.</div>
+                                    <div class="details">
+                                        <p class="my-2" style="font-family: 'SansArabicLight';">في <span
+                                                style="font-family: 'SansArabicSemiBold';">بودكاست ألخ </span> من <span
+                                                style="font-family: 'SansArabicSemiBold';">ناس عدن</span> 23 أكتوبر 2024
+                                            <i class="fas fa-solid fa-medal"></i>
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end landing section  -->
+
+    <!-- start main posts -->
+    <div class="mail-posts">
+        <div class="container border-bottom pb-4">
+            <div class="section-heading py-3 mt-2">
+                <h3>برامج مميزة</h3>
+            </div>
+            <div class="row">
+                <div class="col-6 col-md-2 mb-3 mb-md-0 border-radius">
+                    <a href="">
+                        <img class="img-fluid border-radius" src="imgs/episode-1.webp" alt="">
+                    </a>
+                </div>
+                <div class="col-6 col-md-2 mb-3 mb-md-0 border-radius">
+                    <a href="">
+                        <img class="img-fluid border-radius" src="imgs/episode-7.webp" alt="">
+                    </a>
+                </div>
+                <div class="col-6 col-md-2 mb-3 mb-md-0 border-radius">
+                    <a href="">
+                        <img class="img-fluid border-radius" src="imgs/episode-3.webp" alt="">
+                    </a>
+                </div>
+                <div class="col-6 col-md-2 mb-3 mb-md-0 border-radius">
+                    <a href="">
+                        <img class="img-fluid border-radius" src="imgs/episode-4.webp" alt="">
+                    </a>
+                </div>
+                <div class="col-6 col-md-2 mb-3 mb-sm-0 border-radius">
+                    <a href="">
+                        <img class="img-fluid border-radius" src="imgs/episode-5.webp" alt="">
+                    </a>
+                </div>
+                <div class="col-6 col-md-2 text-center border-radius">
+                    <a href="">
+                        <img class="img-fluid border-radius" src="imgs/episode-2.webp" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end main posts -->
+
+    <!-- start article -->
+    <div class="new-article py-3 mt-3">
+        <div class="container border-bottom pb-5">
+            <div class="row d-flex justify-content-between align-items-center">
+                <div class="col-lg-6 mb-4">
+                    <div class="row d-flex align-items-center align-items-md-start section-one border-radius py-2">
+                        <div class="col-6 col-sm-3">
+                            <div class="img-side">
+                                <a href="">
+                                    <img class="img-fluid border-radius aspect-square" src="imgs/article-3.webp" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-9">
+                            <div class="title-side mt-4 mt-md-0">
+                                <a href="">
+                                    <h3 class="heading-2">كيف تساعدك العدائية السلبية في العمل؟ 🙂</h3>
+                                    <div class="my-2 subheading-2" style="font-family: 'SansArabicLight';">من سابع
+                                        المستحيلات ألا يمر أسبوع دون محفز قوي يثير غضبك من مديرك أو زميلك أو فريقك.
+                                    </div>
+                                    <div class="details">
+                                        <p class="my-2" style="font-family: 'SansArabicLight';">في <span
+                                                style="font-family: 'SansArabicSemiBold';">نشرة حوار </span> من
+                                            <span style="font-family: 'SansArabicSemiBold';">ناس عدن</span> 23
+                                            أكتوبر
+                                            2024
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-4">
+                    <div class="row section-one border-radius py-2">
+                        <div class="col-6 col-sm-3">
+                            <div class="img-side">
+                                <a href="">
+                                    <img class="img-fluid border-radius aspect-square" src="imgs/article-4.webp" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-9">
+                            <div class="title-side mt-4 mt-md-0">
+                                <a href="">
+                                    <h3 class="heading-2">سويفل: العودة للقمّة أصعب من وصولها؟</h3>
+                                    <div class="my-2 subheading-2" style="font-family: 'SansArabicLight';">قصّة شركة
+                                        سويفل تتخلّلها مراحل صعود وهبوط عديدة.</div>
+                                    <div class="details">
+                                        <p class="my-2" style="font-family: 'SansArabicLight';">في <span
+                                                style="font-family: 'SansArabicSemiBold';">نشرة ألخ </span> من <span
+                                                style="font-family: 'SansArabicSemiBold';">ناس عدن</span> 23 أكتوبر
+                                            2024
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-4">
+                    <div class="row d-flex align-items-center align-items-md-start section-one border-radius py-2">
+                        <div class="col-6 col-sm-3">
+                            <div class="img-side">
+                                <a href="">
+                                    <img class="img-fluid border-radius aspect-square" src="imgs/article-5.webp" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-9">
+                            <div class="title-side mt-4 mt-md-0">
+                                <a href="">
+                                    <h3 class="heading-2">عندما تُستخدَم الأفلام في السياسة 🪖🗣️</h3>
+                                    <div class="my-2 subheading-2" style="font-family: 'SansArabicLight';">هل ينتمي
+                                        فلم «ذ أبرنتس» (The Apprentice) إلى مجموعة الأفلام التي شكلت نقلة حقيقية؟
+                                    </div>
+                                    <div class="details">
+                                        <p class="my-2" style="font-family: 'SansArabicLight';">في <span
+                                                style="font-family: 'SansArabicSemiBold';">نشرة حوار </span> من
+                                            <span style="font-family: 'SansArabicSemiBold';">ناس عدن</span> 23
+                                            أكتوبر
+                                            2024
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-4">
+                    <div class="row section-one border-radius py-2">
+                        <div class="col-6 col-sm-3">
+                            <div class="img-side">
+                                <a href="">
+                                    <img class="img-fluid border-radius aspect-square" src="imgs/article-6.webp" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-9">
+                            <div class="title-side mt-4 mt-md-0">
+                                <a href="">
+                                    <h3 class="heading-2">هل القراءة للكتب فقط 🖼️🎨</h3>
+                                    <div class="my-2 subheading-2" style="font-family: 'SansArabicLight';">القراءة
+                                        قد تنتهي في النص المكتوب، لكنها تبدأ في مناطق أخرى بعيدة عنه، أو متفاعلة معه
+                                        بفضل التأثير والتأثر.</div>
+                                    <div class="details">
+                                        <p class="my-2" style="font-family: 'SansArabicLight';">في <span
+                                                style="font-family: 'SansArabicSemiBold';">نشرة ألخ </span> من <span
+                                                style="font-family: 'SansArabicSemiBold';">ناس عدن</span> 23 أكتوبر
+                                            2024
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <div class="row d-flex align-items-center align-items-md-start section-one border-radius py-2">
+                        <div class="col-6 col-sm-3">
+                            <div class="img-side">
+                                <a href="">
+                                    <img class="img-fluid border-radius aspect-square" src="imgs/article-7.webp" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-9">
+                            <div class="title-side mt-4 mt-md-0">
+                                <a href="">
+                                    <h3 class="heading-2">كيف غزا الأنمي الياباني قلبك وقلوب العالم؟ 🥹</h3>
+                                    <div class="my-2 subheading-2" style="font-family: 'SansArabicLight';">احتفال
+                                        مسلسل دراغون بول بأربعين عامًا على إصداره يذكرنا بقوة الأنمي. </div>
+                                    <div class="details">
+                                        <p class="my-2" style="font-family: 'SansArabicLight';">في <span
+                                                style="font-family: 'SansArabicSemiBold';">نشرة حوار </span> من
+                                            <span style="font-family: 'SansArabicSemiBold';">ناس عدن</span> 23
+                                            أكتوبر
+                                            2024
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="row section-one border-radius py-2">
+                        <div class="col-6 col-sm-3">
+                            <div class="img-side">
+                                <a href="">
+                                    <img class="img-fluid border-radius aspect-square" src="imgs/article-8.webp" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-9">
+                            <div class="title-side mt-4 mt-md-0">
+                                <a href="">
+                                    <h3 class="heading-2">أداة «NotebookLM» تقلب عالم الدراسات العليا! 🪄</h3>
+                                    <div class="my-2 subheading-2" style="font-family: 'SansArabicLight';">باعتمادنا
+                                        على الذكاء الاصطناعي مساعدًا شخصيًّا في الأبحاث، سترتبط كل معارف البشر بعضها
+                                        ببعض في عقل صناعي واحد.</div>
+                                    <div class="details">
+                                        <p class="my-2" style="font-family: 'SansArabicLight';">في <span
+                                                style="font-family: 'SansArabicSemiBold';">نشرة ألخ </span> من <span
+                                                style="font-family: 'SansArabicSemiBold';">ناس عدن</span> 23 أكتوبر
+                                            2024
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end article -->
+
+    <!-- start footer  -->
+    <div class="footer">
+        <div class="container">
+            <div class="py-3 text-center">
+                <span>جميع الحقوق محفوظة لشركة ناس عدن للنشر والتوزيع &copy; 2024
+                </span>
+            </div>
+        </div>
+    </div>
+    <!-- end footer  -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

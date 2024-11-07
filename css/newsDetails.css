@@ -1,0 +1,55 @@
+:root {
+    --margin-top: 7rem;
+    --margin-bottom: 2rem;
+    --paragraphClr: #5a5a5a;
+  }
+main{
+    margin: var(--margin-top) auto var(--margin-bottom);
+    max-width: 700px;
+}
+main .subtitle{
+    font-family: 'SansArabicLight';
+    color: var(--paragraphClr);
+}
+main .author img{
+    max-width: 30px;
+    border: 2px solid #fff;
+}
+main .author img.last-img{
+    margin-right: -12px;
+  }
+main .author .name{
+    color: var(--forth-color);
+  }
+main .author .name:hover{
+    color: #db2b00;
+  }
+main .author .subtitle{
+    font-size: 13px;
+  }
+main .details span{
+    font-family: 'SansArabicSemiBold';
+    color: #000;
+}
+main .img-section{
+    width: 600px;
+    height: 338px;
+}
+main .img-section img{
+    width: 100%;
+    height: 100%;
+}
+@media (max-width: 768px){
+    main .img-section{
+        max-width: 100%;
+        max-height: 100%;
+        width: auto;
+        height: auto;
+    }
+    main .img-section img{
+        max-width: 100%;
+        max-height: 100%;
+        width: auto;
+        height: auto;
+    }
+}
